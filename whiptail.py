@@ -2,6 +2,8 @@
 # Copyright (C) 2013 Marwan Alsabbagh
 # license: BSD, see LICENSE for more details.
 
+__version__ = '0.1'
+
 import sys
 import shlex
 from utile import save_args, flatten

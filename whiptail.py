@@ -14,8 +14,9 @@ Response = namedtuple('Response', 'returncode value')
 
 
 class Whiptail(object):
+    @save_args
     def __init__(self, title='', backtitle='', height=10, width=50, auto_exit=True):
-        save_args(self, vars())
+        pass
 
     def run(self, control, msg, extra=(), exit_on=(1, 255)):
         cmd = ['whiptail', '--title', self.title, '--backtitle', self.backtitle,

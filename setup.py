@@ -2,15 +2,20 @@ import os
 import re
 from setuptools import setup
 
-README = open('README.rst').read()
-CHANGES = open('CHANGES.txt').read()
-VERSION = re.findall("__version__ = '(.*)'", open('whiptail.py').read())[0]
+readme = open('README.rst').read()
+changes = open('CHANGES.txt').read()
+version_file = 'whiptail.py'
+version = re.findall("__version__ = '(.*)'", open(version_file).read())[0]
+try:
+    version = __import__('utile').git_version(version)
+except ImportError:
+    pass
 
 setup(
     name='whiptail',
-    version=VERSION,
+    version=version,
     description="Collection of useful functions and classes",
-    long_description=README + '\n\n' + CHANGES,
+    long_description=readme + '\n\n' + changes,
     keywords='whiptail',
     author='Marwan Alsabbagh',
     author_email='marwan.alsabbagh@gmail.com',

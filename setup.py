@@ -1,4 +1,3 @@
-import os
 import re
 from setuptools import setup
 
@@ -24,7 +23,6 @@ setup(
     py_modules=['whiptail'],
     namespace_packages=[],
     include_package_data=True,
-    install_requires=['utile>=0.1'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',

@@ -13,7 +13,7 @@ except ImportError:
 setup(
     name='whiptail',
     version=version,
-    description="Collection of useful functions and classes",
+    description="Use whiptail to display dialog boxes from shell scripts",
     long_description=readme + '\n\n' + changes,
     keywords='whiptail',
     author='Marwan Alsabbagh',

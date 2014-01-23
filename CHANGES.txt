@@ -1,7 +1,16 @@
 Changelog
 =========
 
+0.2 (2014-01-23)
+------------------
 
+- Removed need for the utile libary. Whiptail now only needs standard library.
+- Added support for Python 2 and 3.
+- Made code pass PEP8 with no errors.
+- Made code pass pyflakes with no errors.
+- Added Makefile for common operations.
+
+ 
 0.1 (2013-03-29)
 ------------------
 
